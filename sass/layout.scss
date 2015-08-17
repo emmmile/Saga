@@ -46,10 +46,10 @@ body {
         }
         
         .post-data, .tag-data {
-            color: $grey;
+            color: $white;
             @include font-size(14);
             a {
-                color: #8d8d8d;
+                // color: #8d8d8d;
                 border: 0;
                 &:hover {
                     color: $white;
