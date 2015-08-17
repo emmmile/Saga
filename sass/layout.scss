@@ -3,12 +3,13 @@ body {
     min-height: 100%;
     background: darken($white, 5%);
     font-family: $font;
-    @include font-size(14);
+    @include font-size(18);
     line-height: 1.8;
     color: $transparent-grey;
     overflow-y: scroll;
 }
 #header {
+    font-family: $font-heading;
     max-height: 100vh;
     overflow: hidden;
     background-color: #333;
@@ -16,7 +17,7 @@ body {
     background-position: center;
     .header-background {
         @include flexbox();
-        background: rgba(0,0,0,0.7);
+        //background: rgba(0,0,0,0.7);
         width: 100%;
         height: 100%;
     }
@@ -26,6 +27,8 @@ body {
         margin: auto;
         padding: 60px 20px 20px 20px;
         color: $white;
+        margin-bottom: 0px;
+        margin-left: 0px;
         h1 {
             -webkit-animation-delay: .5s;
             animation-delay: .5s;
@@ -34,7 +37,7 @@ body {
                 left: 0;
                 right: 0;
             };
-            font-weight: 400;
+            //font-weight: 400;
             cursor: default;
         }
         a {
@@ -274,7 +277,7 @@ body {
                     position: absolute;
                     bottom: 0px;
                     left: 0px;
-                    font-weight: 400;
+                    //font-weight: 400;
                     @include transition(transform ease 0.5s);
                 }
                 &:hover {
@@ -343,6 +346,7 @@ body {
 }
 
 #footer {
+    font-family: $font-heading;
     background: #252525;
     color: darken($white, 40%);
     @include font-size(12);
