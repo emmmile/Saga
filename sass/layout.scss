@@ -166,6 +166,7 @@ body {
             @include box-sizing(border-box);
             padding: 0 20px;
             .blog-title {
+                display: none;
                 @include font-size(14);
                 letter-spacing: 0;
                 margin: 0;
@@ -323,6 +324,7 @@ body {
                 }
                 .author {
                     margin-right: $post-padding / 2;
+                    display: none;
                 }
             }
             
