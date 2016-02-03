@@ -5,7 +5,7 @@ body {
     font-family: $font;
     @include font-size(18);
     line-height: 1.8;
-    color: $transparent-grey;
+    color: $light-grey;
     overflow-y: scroll;
 }
 #header {
@@ -131,7 +131,7 @@ body {
             a {
                 color: darken($white, 40%);
                 &:hover {
-                    color: black;
+                    color: $black;
                 }
             }
             .blog-title {
@@ -181,7 +181,7 @@ body {
 .post-template, .page-template {
     #main {
         padding: 40px 20px;
-        background: $white;
+        background: $background-main;
     }
 }
 
@@ -239,7 +239,7 @@ body {
     }
     &.archive {
         overflow: hidden;
-        background: darken($white, 5%);
+        background: $background-main;
         .post {
             $post-padding: 20px;
             float: left;
@@ -247,13 +247,13 @@ body {
             width: 100%;
             margin: inherit;
             margin-bottom: $gutter;
-            background: $white;
+            background: $background-post;
             @include box-sizing(border-box);
             @include transition(opacity 1s);
             a {
                 border-color: rgba(0,0,0,0);
                 &:hover {
-                    border-color: $black;
+                    border-color: $white;
                 }
             }
             .post-image {
@@ -309,14 +309,14 @@ body {
                 cursor: default;
                 color: #ccc;
                 width: 100%;
-                background: #FFFFFF;
+                background: $background-post-meta;
                 border-top: 1px solid #f7f7f7;
                 padding: 15px $post-padding;
                 @include box-sizing(border-box);
                 a {
                     color: inherit;
                     &:hover {
-                        color: black;
+                        color: $white;
                     }
                 }
                 .date {
