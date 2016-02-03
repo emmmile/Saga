@@ -302,12 +302,12 @@ body {
                 margin: $post-padding - 5 $post-padding;
                 @include font-size(14);
                 cursor: default;
-                color: darken($white, 40%);
+                color: darken($white, 10%);
             }
             .post-meta {
                 @include font-size(14);
                 cursor: default;
-                color: #ccc;
+                color: $grey;
                 width: 100%;
                 background: $background-post-meta;
                 border-top: 1px solid #f7f7f7;
@@ -357,14 +357,14 @@ body {
     -webkit-animation-delay: 1s; /* Chrome, Safari, Opera */
     animation-delay: 1s;
     .colophon {
-        padding: 50px 20px;
+        padding: 20px 20px;
         max-width: 600px;
         margin: 0 auto;
         .poweredby {
             display: none;
         }
         section {
-            margin: 10px 0;
+            margin: 0 0;
             &:first-child {
                 margin-top: 0;
             }
@@ -374,7 +374,7 @@ body {
         }
     }
     .bottom {
-        padding: 20px 20px;
+        padding: 10px 20px;
         background: rgb(26, 25, 25);
         .attribution {
             max-width: 600px;
