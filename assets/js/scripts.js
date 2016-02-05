@@ -69,7 +69,7 @@
                         size = 210;
                     }
                     $('.gallery').removeWhitespace().collagePlus({
-                            'targetHeight': size/5
+                            'targetHeight': size/2
                     });
                 });
         },
